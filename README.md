@@ -86,7 +86,9 @@ cd ..
 
 ### Running the Application
 
-1. Start the backend server (in one terminal):
+⚠️ **Important**: You must run TWO separate terminals simultaneously for the app to work!
+
+#### Terminal 1 - Backend Server:
 
 ```bash
 cd dummy-backend
@@ -95,13 +97,15 @@ npm start
 
 The backend will run on `http://localhost:8080`
 
-2. Start the frontend development server (in another terminal):
+#### Terminal 2 - Frontend Development Server:
 
 ```bash
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+The app will be available at `http://localhost:5173` (or another port if 5173 is in use)
+
+> **Note**: Both servers must be running at the same time. The frontend fetches data from the backend API on port 8080.
 
 ## 📝 Available Scripts
 
